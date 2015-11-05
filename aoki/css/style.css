@@ -44,8 +44,8 @@ header h1 {
 
 #slideshow {
  position: relative;
- width:  840px; /* 画像の横幅に合わせて記述 */
- height: 426px; /* 画像の高さに合わせて記述 */
+ width:  840px;
+ height: 426px;
 }
 #slideshow img {
  position: absolute;
