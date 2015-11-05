@@ -1,0 +1,21 @@
+@charset: "utf-8";
+#control {
+  background-color: blue;
+  width: 200px;
+  margin: 10px 5px 10px 0;
+}
+#lists {
+  background-color: black;
+  color: red;
+  margin: 0;
+  min-width: 100px;
+  max-width: 300px;
+}
+
+#lists p {
+  background-color: black;
+  color: red;
+  margin: 5px 0 5px 0;
+  min-width: 100px;
+  max-width: 300px;
+}
