@@ -1,0 +1,188 @@
+﻿@charset "utf-8";
+
+/* 基本レイアウト ここから↓ */
+@import url(common.css);
+/*body全体にグラデ*/
+body {
+	-moz-box-shadow: 0px 0px 20px #000000;
+  -webkit-box-shadow: 0px 0px 20px #000000;
+  box-shadow: 0px 0px 20px #000000;
+  /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#d5ff0f', endColorstr = '#bff2ff');
+  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#d5ff0f', endColorstr = '#bff2ff')";
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  background-image: -moz-linear-gradient(top, #d5ff0f, #bff2ff);
+  background-image: -ms-linear-gradient(top, #d5ff0f, #bff2ff);
+  background-image: -o-linear-gradient(top, #d5ff0f, #bff2ff);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#d5ff0f), to(#bff2ff));
+  background-image: -webkit-linear-gradient(top, #d5ff0f, #bff2ff);
+  background-image: linear-gradient(top, #d5ff0f, #bff2ff);
+  /*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+  color: #5f5039;
+  width: 900px;
+  margin: 10px auto 10px auto;
+}
+header, nav, #breadcrumb, #contents, footer {
+	width: 840px;
+	margin-left: auto;
+	margin-right: auto;
+}
+header h1 {
+	margin: 0 0 26px 0;
+	padding-top: 5px;
+	text-align: center;
+	width: 840px;
+}
+
+#pagetop {
+	text-align : right;
+}
+
+#slideshow {
+ position: relative;
+ width:  840px; /* 画像の横幅に合わせて記述 */
+ height: 426px; /* 画像の高さに合わせて記述 */
+}
+#slideshow img {
+ position: absolute;
+ top: 0;
+ left:0;
+ z-index: 8;
+ opacity: 0.0;
+}
+#slideshow img.active {
+ z-index: 10;
+ opacity: 1.0;
+}
+#slideshow img.last-active {
+ z-index: 9;
+}
+
+/*h2全てにグラデ背景をつける*/
+h2 {  
+	width: 220px;
+	color: white;
+	text-align: center;
+  -moz-border-radius: 23px;
+  -webkit-border-radius: 23px;
+  border-radius: 23px;
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+  -moz-box-shadow: 0px 0px 20px #000000;
+  -webkit-box-shadow: 0px 0px 20px #000000;
+  box-shadow: 0px 0px 20px #000000;
+  /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#62ff0d', endColorstr = '#7417ff');
+  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#62ff0d', endColorstr = '#7417ff')";
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  background-image: -moz-linear-gradient(top, #62ff0d, #7417ff);
+  background-image: -ms-linear-gradient(top, #62ff0d, #7417ff);
+  background-image: -o-linear-gradient(top, #62ff0d, #7417ff);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#62ff0d), to(#7417ff));
+  background-image: -webkit-linear-gradient(top, #62ff0d, #7417ff);
+  background-image: linear-gradient(top, #62ff0d, #7417ff);
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  /*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+  /*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+}  
+
+/*お知らせ*/
+#news {
+	width: 588px;
+	padding-top: 0;
+	float: left;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0 0 20px 0;
+	padding-left: 0;
+	overflow: hidden;
+}
+nav ul li {
+	width: 210px;
+	float: left;
+}
+nav ul li a {
+	display: block;
+	height: 0;
+	padding-top: 44px;
+	overflow: hidden;
+}
+nav ul li#nav_concept a {
+	background-image: url(../images/nav1.png);
+}
+nav ul li#nav_plan a {
+	background-image: url(../images/nav2.png);
+}
+nav ul li#nav_fair a {
+	background-image: url(../images/nav3.png);
+}
+nav ul li#nav_contact a {
+	background-image: url(../images/nav4.png);
+}
+
+/*こだわりの文具*/
+#gazou {
+	width: 210px;
+	height: 220px;
+	padding-bottom: 0;
+}
+
+#setsumei {
+	height: 220px;
+	padding-right: 20px;
+	padding-bottom: 0;
+}
+
+#syousai {
+	width: 420px;
+	margin-top: 0;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-top: 0;
+	vertical-align: top;
+}
+
+/*お問い合わせ*/
+input[type="text"] {
+	width: 200px;
+	margin-bottom: 5px;
+}
+input[type="email"] {
+	width: 300px;
+	margin-bottom: 5px;
+}
+input[type="submit"] {
+  width: 120px;
+  height: 30px;
+  margin-bottom: 5px;
+  position: relative; 
+  left:280px;
+}
+
+/*アクセス*/
+#annai {
+	padding-right: 50px;
+  font-size: 30px;
+}
+
+/*会社概要*/
+#kaisya {
+	text-align : center;
+}
+
+
+/*footer*/
+footer {
+	text-align: center;
+  padding-bottom: 5px;
+}

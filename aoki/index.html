@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang = "ja">
+<head>
+  <meta charset = "UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>文房具のアオキ- sationery shop AOKI</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript">
+    function slideSwitch() {
+     var $active = $('#slideshow img.active');
+
+     if ( $active.length == 0 ) $active = $('#slideshow img:last');
+
+     var $next =  $active.next().length ? $active.next()
+     : $('#slideshow img:first');
+
+     $active.addClass('last-active');
+
+     $next.css({opacity: 0.0})
+     .addClass('active')
+     .animate({opacity: 1.0}, 1200, function() {
+       $active.removeClass('active last-active');
+     });
+   }
+
+   $(function() {
+     setInterval( "slideSwitch()", 3000 );
+   });
+ </script>
+</head>
+
+<body>
+  <header id="top">
+    <h1><a href="aoki.html">
+      <p id="slideshow">
+       <img src="images/bunguiroiro.jpg" alt="こだわりの文具" class="active">
+       <img src="images/bunguenpitsu.jpg" alt="最高の使い心地">
+       <img src="images/haikei2.jpg" alt="文具のアオキ">
+     </p>
+   </a></h1>
+ </header>
+ <nav>
+  <ul>
+    <li id="nav_concept"><a href="#bunbogu">こだわりの文房具</a></li>
+    <li id="nav_plan"><a href="#toiawase">お問い合わせ</a></li>
+    <li id="nav_fair"><a href="#akusesu">アクセス</a></li>
+    <li id="nav_contact"><a href="#gaiyo">会社概要</a></li>
+  </ul>
+</nav>
+<div id="contents">
+  <div id="main">
+    <table>
+      <tr>
+        <td id="news">
+          <h2>お知らせ</h2>
+          <ul>
+            <li><time datetime="2015-11-01">2015年11月01日</time>サイトリニューアル</li>
+            <li><time datetime="2015-11-01">2015年11月01日</time>店舗改装リニューアルオープン</li>
+            <li><time datetime="2015-10-10">2015年10月10日</time>こだわりのシステム手帳入荷</li>
+            <li><time datetime="2015-09-14">2015年09月14日</time>こだわりの地球儀入荷</li>
+          </ul>
+        </td>
+        <td>
+          <h2 id="muryo">無料配送サービス</h2>
+          午前中にFAXでご注文を頂ければ、当日中に<b><font color="red">無料</font></b>にて配送いたします。<br><br>
+          取り扱い品目：<br>　・一般事務用品<br>　・製図用品
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div id ="bunbogu">
+    <h2>こだわりの文房具</h2>
+    <table >
+      <tr border="1">
+        <td id="gazou">
+         <img src="images/diary.jpg" alt="こだわりのシステム手帳">
+       </td>
+       <td id="setsumei">
+        ■サイズ<br>　・横幅：164mm<br>　・縦幅：232mm<br>　・厚さ：22mm<br><br>■重量：502g
+      </td>
+      <td id="gazou" >
+       <img src="images/globe.jpg" alt="こだわりの地球儀">
+     </td>
+     <td id="setsumei">
+      ■サイズ<br>　・直径：30.5cm<br>　　(1/4200万)<br><br>■重量：1.4kg
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" id="syousai">
+      選び抜かれた高品質な革を職人が丹念に仕上げた、丈夫で機能的なシステム手帳です。<br>バイブルサイズは、どなたにもお使いいただけるスタンダードな大きさ。<br>美しさと耐久性を兼ね備えた本品は、長く使える最高のパートナーとなるでしょう。
+    </td>
+    <td colspan="2" id="syousai">
+      地球儀というと、何の変哲もない商品のように思われがちですが、新しい作成法、新しいデザインを得て、非常に興味深い、おしゃれでインテリア性の高い商品になりました。
+    </td>
+  </tr>
+  <tr>
+    <td id="gazou">
+      <img src="images/calc.jpg" alt="こだわりの電卓">
+    </td>
+    <td id="setsumei">
+      ■サイズ<br>　・横幅：78mm<br>　・縦幅：102mm<br>　・厚さ：16mm<br><br>■重量：253g
+    </td>
+    <td id="gazou">
+      <img src="images/enpitsu.jpg" alt="こだわりの色鉛筆">
+    </td>
+    <td id="setsumei">
+      ■ケースサイズ<br>　・横幅：250mm<br>　・縦幅：150mm<br>　・厚さ：16mm<br><br>■重量：212g
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" id="syousai">
+      電卓というと計算できればいいと思われがちですが、指が疲れにくいよう設計されたキー、操作性を向上させるキー配列など、機能性にこだわりつつ、デザインも新鮮味がありつつ、飽きがこない商品となっています。
+    </td>
+    <td colspan="2" id="syousai">
+      見た目も鮮やかで、書き具合にこだわった色鉛筆です。必要最低限に抑えた24色は、重ね書きすることで混合色も再現可能になっています。<br>絵画はもちろん、日常でも使用しやすいことを重視したデザイン、握りやすいグリップと機能性も充分です。
+    </td>
+  </tr>
+</table>
+<p id="pagetop"><a href="#top">ページの先頭へ戻る</a></p>
+</div>
+
+<div id ="toiawase">
+  <h2>お問い合わせ</h2>
+  <p>商品に関するご質問や、ご意見、ご希望など、なんでもお気軽にご連絡ください。</p>
+  <ul>
+    <li>「お名前」、「メールアドレス」、「ご意見・ご質問・ご希望」とも、<b><font color="red">全て必須事項</font></b>ですので、<BR>ご記入よろしくお願いします。</li>
+    <li>ご登録いただいた個人情報は、お問い合わせ内容の確認以外には使用いたしません。</li>
+  </ul>
+  <form action="#">
+    <table>
+     <tr>
+      <td>お名前：</td>
+      <td><input type="text" name="name" required placeholder="例) 小鳥遊　寿限無"></td>
+      <tr>
+        <td>メールアドレス(e-mail)：</td>
+        <td><input type="email" name="mail" required placeholder="例) jugem@exam.com"></td>
+        <tr>
+          <td rowspan="4">お問い合わせ種類：</td>
+          <tr>
+            <td><input type="radio" name="kind" checked value="0">商品構成・内容
+            </td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="kind" value="1">無料配送サービス
+            </td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="kind" value="2">その他
+            </td>
+          </tr>
+          <tr>
+            <td>内容：</td>
+            <td><textarea name="comment" required placeholder="ご意見・ご要望をご記入ください。" cols="40" rows="10"></textarea>
+            </td>
+          </tr>
+        </table>
+        <p><input type="submit" value="確認する"></p>
+      </form>
+      <p id="pagetop"><a href="#top">ページの先頭へ戻る</a></p>
+    </div>
+
+    <div id ="akusesu">
+      <h2>アクセス</h2>
+      <img src="images/map.gif" alt="MAP">
+    </div>
+    <div>
+
+      <div id ="gaiyo">
+        <h2>会社概要</h2>
+        <table id="kaisya">
+          <tr>
+            <td id="annai">
+              <b>文具のアオキ<br>住所：〒123-xxxx<br>東京都江戸川区小峰4-x-x<br>TEL：03-3633-xxxx<br>FAX：03-3635-xxxx</b>
+            </td>
+            <td>
+              <img src="images/QRcode.gif" alt="QRコード"><br>※地図はQRコードからも読み取れます</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <footer id="footer">
+        <p id="pagetop"><a href="#top">ページの先頭へ戻る</a></p>
+        <p id="copyright"><small>Copyright &copy;2015 sationery shop AOKI(Takuma.T) All rights reserved.</small></p>
+      </footer>
+    </body>
+    </html>
