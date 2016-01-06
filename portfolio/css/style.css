@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+body {
+  background: -webkit-gradient(radial, 50% 56%, 0, 50% 56%, 121, color-stop(1.00, #0f0), color-stop(1.00, #0f0), color-stop(1.00, #0f0), color-stop(1.00, #0f0), color-stop(0.00, #ff0), color-stop(0.00, #ff0), color-stop(0.00, #ff0));
+  background: -webkit-radial-gradient(50% 56%, circle, #ff0 0%, #ff0 0%, #ff0 0%, #0f0 100%, #0f0 100%, #0f0 100%, #0f0 100%);
+  background: -moz-radial-gradient(50% 56%, circle, #ff0 0%, #ff0 0%, #ff0 0%, #0f0 100%, #0f0 100%, #0f0 100%, #0f0 100%);
+  background: -o-radial-gradient(50% 56%, circle, #ff0 0%, #ff0 0%, #ff0 0%, #0f0 100%, #0f0 100%, #0f0 100%, #0f0 100%);
+  background: -ms-radial-gradient(50% 56%, circle, #ff0 0%, #ff0 0%, #ff0 0%, #0f0 100%, #0f0 100%, #0f0 100%, #0f0 100%);
+  background: radial-gradient(50% 56%, circle, #ff0 0%, #ff0 0%, #ff0 0%, #0f0 100%, #0f0 100%, #0f0 100%, #0f0 100%);
+}
