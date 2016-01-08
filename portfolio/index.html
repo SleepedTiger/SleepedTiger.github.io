@@ -3,41 +3,188 @@
 <head>
   <meta charset = "UTF-8">
   <title>Portfolio（田中琢磨）</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+　　<meta name="copyright" content="Takuma Tanaka">
+　　<meta name="description" content="田中琢磨のポートフォリオです">
+　　<meta name="keywords" content="田中琢磨,ポートフォリオ,portfolio,TakumaTanaka,Tanakatakuma">
+　　<link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/openclose.js"></script>
 </head>
-<body>
-<h1>田中琢磨　Tanaka Takuma<img src="・・・"></h1>
 
-<div>Profile</div>
-2015年11月：Ruby Association Certified Ruby Programmer Silver version 2.1　合格<br>
-2015年11月：Webクリエイター能力認定試験エキスパート　合格<br>
+<body id="top">
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" width="400" height="45" alt="Tak'sPortfolio"></a><br>
+<img src="images/nigaoe.jpg" width="240" height="50" alt="Tak'sPortfolio">
+</h1>
+<nav id="menubar">
+<ul>
+<li class="current"><a href="index.html">HOME</a></li>
+<li><a href="#prifile">Profile</a></li>
+<li><a href="#skill">Skill</a></li>
+<li><a href="#product">Product</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
 
+<div id="container">
+
+<div id="contents">
+
+<div id="main">
+
+<section>
+<h2 id="profile">Profile</h2>
+<p>2015年11月：Ruby Association Certified Ruby Programmer Silver version 2.1　合格<br>
+2015年11月：Webクリエイター能力認定試験エキスパート　合格<br></p>
+<p>
 前職までは主にコールセンターやヘルプデスクでの業務に携わっており、リーダー経験・SV経験もあるため、スタッフ管理・工程管理などに長け、責任感が強い。<br>
-退職後はもともと興味があったプログラミングの世界に入らんと、職業訓練校に入校。<br>
+退職後はもともと興味があったプログラミングの世界に入らんと、2015年9月に職業訓練校に入校。<br>
 情報処理知識と Ruby や Ruby on Rails による Webサービス開発、Web サイト制作、データベース技術、スマホアプリ制作を勉強。<br>
-現在もスマホアプリ等を勉強しながら鋭意作成中。<br>
+現在もスマホアプリ等を勉強しながら鋭意作成中。<br></p>
 
-<div>Skill</div>
+<section>
+<h2 id="skill">Skill</h2>
+<p>
 HTML　 ・・・・・・・　★★★★★<br>
 CSS　・・・・・・・・　★★★★☆<br>
 Ruby　 ・・・・・・・　★★★★★<br>
 Ruby on Rails　・・・　★★★☆☆<br>
 Photosyop　・・・・・　★★☆☆☆<br>
 Illustrator　・・・・　★★☆☆☆<br>
+</p>
 
-<div>Product</div>
-架空の文具サイト
-<a href="https://sleepedtiger.github.io/aoki/index.html#gaiyo"><img src="images/aoki.jpg"></a>
-職業訓練校にて、指示により1日で作成。<br>
+<section>
+<h2 id="product">Product</h2>
+<p id="product_title"><a href="https://sleepedtiger.github.io/aoki/index.html#gaiyo">架空の文具サイト</a></p>
+<div id="image"><a href="https://sleepedtiger.github.io/aoki/index.html#gaiyo"><img src="images/aoki.jpg"></a></div>
+<p id="setsumei">職業訓練校にて、指示により1日で作成。<br>
 1ページでのレイアウトとの指示もあり、バックグラウンドをグラデーションにすることにより、ページ内での変化を付けた。<br>
-また、QRコードを読み込むことで地図を表示できるようにし、スマホでのMAP確認も簡単にした。<br>
+また、QRコードを読み込むことで地図を表示できるようにし、スマホでのMAP確認も簡単にした。</p>
 
-架空のショッピングサイト
-<a href="https://takdepot.herokuapp.com/ja"><img src="images/jungle.jpg"></a>
-職業訓練校にて2週間で作成。<br>
+<p id="product_title"><a href="https://takdepot.herokuapp.com/ja">架空のショッピングサイト</a></p>
+<div id="image"><a href="https://takdepot.herokuapp.com/ja"><img src="images/jungle.jpg"></a></div>
+<p id="setsumei">職業訓練校にて2週間で作成。<br>
 各商品の詳細情報へのリンク及び詳細情報でのコメント投稿・表示を可能にした。<br>
-またコメントが投稿されることで評価平均点も自動的に更新される。<br>
-顧客側の操作に関してはほぼ予定通りに出来上がったが、時間切れにより管理者側の操作に不具合が残る。<br>
+また、コメントが投稿されることで評価平均点も自動的に更新される。
+</p>
 
+<section>
+
+<h2 id="contact">Contact</h2>
+<p><strong class="color1">※以下は調整中です。実際にはお問い合わせ内容は送信されません</strong>
+
+<table class="ta1 mb1em">
+<tr>
+<th colspan="2" class="tamidashi">※マークは入力必須です</th>
+</tr>
+<tr>
+<th>お名前※</th>
+<td><input type="text" name="お名前" size="30" class="ws"></td>
+</tr>
+<tr>
+<th>メールアドレス※</th>
+<td><input type="text" name="メールアドレス" size="30" class="ws"></td>
+</tr>
+<tr>
+<th>ご住所(都道府県)</th>
+<td>
+<select name="ご住所(都道府県)">
+<option value="" selected="selected">都道府県選択</option>
+<option value="北海道">北海道</option>
+<option value="青森県">青森県</option>
+<option value="岩手県">岩手県</option>
+<option value="宮城県">宮城県</option>
+<option value="秋田県">秋田県</option>
+<option value="山形県">山形県</option>
+<option value="福島県">福島県</option>
+<option value="茨城県">茨城県</option>
+<option value="栃木県">栃木県</option>
+<option value="群馬県">群馬県</option>
+<option value="埼玉県">埼玉県</option>
+<option value="千葉県">千葉県</option>
+<option value="東京都">東京都</option>
+<option value="神奈川県">神奈川県</option>
+<option value="新潟県">新潟県</option>
+<option value="富山県">富山県</option>
+<option value="石川県">石川県</option>
+<option value="福井県">福井県</option>
+<option value="山梨県">山梨県</option>
+<option value="長野県">長野県</option>
+<option value="岐阜県">岐阜県</option>
+<option value="静岡県">静岡県</option>
+<option value="愛知県">愛知県</option>
+<option value="三重県">三重県</option>
+<option value="滋賀県">滋賀県</option>
+<option value="京都府">京都府</option>
+<option value="大阪府">大阪府</option>
+<option value="兵庫県">兵庫県</option>
+<option value="奈良県">奈良県</option>
+<option value="和歌山県">和歌山県</option>
+<option value="鳥取県">鳥取県</option>
+<option value="島根県">島根県</option>
+<option value="岡山県">岡山県</option>
+<option value="広島県">広島県</option>
+<option value="山口県">山口県</option>
+<option value="徳島県">徳島県</option>
+<option value="香川県">香川県</option>
+<option value="愛媛県">愛媛県</option>
+<option value="高知県">高知県</option>
+<option value="福岡県">福岡県</option>
+<option value="佐賀県">佐賀県</option>
+<option value="長崎県">長崎県</option>
+<option value="熊本県">熊本県</option>
+<option value="大分県">大分県</option>
+<option value="宮崎県">宮崎県</option>
+<option value="鹿児島県">鹿児島県</option>
+<option value="沖縄県">沖縄県</option>
+</select></td>
+</tr>
+<tr>
+<th>ご住所(市区町村以下)</th>
+<td><input type="text" name="ご住所(市区町村以下)" size="30" class="wl"></td>
+</tr>
+<tr>
+<th>お問い合わせ項目※</th>
+<td>
+<label><input type="checkbox" name="学歴について" value="お問い合わせ項目１">学歴について</label><br>
+<label><input type="checkbox" name="職歴について" value="お問い合わせ項目２">職歴について</label><br>
+<label><input type="checkbox" name="資格について" value="お問い合わせ項目３">資格について</label><br>
+<label><input type="checkbox" name="作品について" value="お問い合わせ項目４">作品について</label><br>
+</td>
+</tr>
+<tr>
+<th>お問い合わせ詳細※</th>
+<td><textarea name="お問い合わせ詳細" cols="30" rows="10" class="wl"></textarea></td>
+</tr>
+</table>
+
+<p class="c">
+<input type="submit" value="内容を確認する">
+</p>
+
+</section>
+
+<p id="pagetop"><a href="#">↑ PAGE TOP</a></p>
+
+</div>
+<!--/contents-->
+
+<footer>
+<small>Copyright&copy; 2016 Takuma Tanaka　All Rights Reserved.</small>
+</footer>
+
+</div>
+<!--/container-->
+
+<!--スライドショースクリプト-->
+<script type="text/javascript" src="js/slide_simple_pack.js"></script>
+
+<!--スマホ用更新情報-->
+<script type="text/javascript">
+if (OCwindowWidth() < 480) {
+	open_close("newinfo_hdr", "newinfo");
+}
+</script>
 </body>
 </html>
