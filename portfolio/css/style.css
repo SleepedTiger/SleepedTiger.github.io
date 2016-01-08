@@ -453,7 +453,7 @@ header {
 	background: url(../images/bg.jpg);
 }
 #top header {
-	background: url(../images/header_bg.JPG) no-repeat bottom center/100% auto;
+	background: url(../images/header_bg.jpg) no-repeat bottom center/100% auto;
 	height: 500px;
 }
 /*ロゴ画像の設定*/
