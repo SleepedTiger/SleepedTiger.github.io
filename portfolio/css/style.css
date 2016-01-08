@@ -3,9 +3,9 @@
 body {
   color: #666;	/*全体の文字色*/
   background: #f1f1ef;
- 　margin: 0px;
-　　padding: 0px;
-　　font: 14px/2 "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";	/*文字サイズ/行間、フォントファミリー*/
+  margin: 0px;
+  padding: 0px;
+  font: 14px/2 "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";	/*文字サイズ/行間、フォントファミリー*/
 }
 
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure{
