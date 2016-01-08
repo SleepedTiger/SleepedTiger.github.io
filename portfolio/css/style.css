@@ -45,7 +45,7 @@ a:hover {
 ---------------------------------------------------------------------------*/
 /*ヘッダーブロック*/
 header {
-	background: url(../images/header_bg.jpg) no-repeat;	/*背景壁紙の読み込み*/
+	background: url(../images/bg.jpg) no-repeat;	/*背景壁紙の読み込み*/
 	height: 350px;	/*ブロックの高さ*/
 	width: 970px;	/*ブロックの幅*/
 	position: relative;
@@ -379,7 +379,7 @@ header {
 	background: url(../images/bg.jpg);
 }
 #top header {
-	background: url(../images/header_bg.jpg) no-repeat bottom center/100% auto;
+	background: url(../images/bg.jpg) no-repeat bottom center/100% auto;
 	height: 250px;
 }
 /*ロゴ画像の設定*/
@@ -453,7 +453,7 @@ header {
 	background: url(../images/bg.jpg);
 }
 #top header {
-	background: url(../images/header_bg.jpg) no-repeat bottom center/100% auto;
+	background: url(../images/bg.jpg) no-repeat bottom center/100% auto;
 	height: 500px;
 }
 /*ロゴ画像の設定*/
