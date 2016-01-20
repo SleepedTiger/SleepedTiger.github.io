@@ -589,3 +589,31 @@ section#new h2.close {
 	text-align: center;
 }
 
+table.skilltabele {
+	border:4px;
+	border-style:inset;
+	border-color: darkorchid;
+	width: 80%;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+th.skilltabele {
+	border:4px;
+	border-style:inset;
+	border-color: darkorchid;
+	width: 50%;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+#main div {
+	text-align: center;
+	font-weight: bold;
+	font-size: large;
+	margin-top: 10px;
+}
