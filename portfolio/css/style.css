@@ -34,7 +34,7 @@ table {
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
 a {
-	color: #666;	/*リンクテキストの色*/
+	color: black;	/*リンクテキストの色*/
 }
 a:hover {
 	color: #ae69ba;			/*マウスオン時の文字色*/
@@ -581,6 +581,7 @@ section#new h2.close {
 	font-size: large;
 	text-align: center;
 	margin-top: 20px;
+	color: black;
 }
 
 #setsumei {
