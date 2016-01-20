@@ -9,6 +9,53 @@
 　　<meta name="keywords" content="田中琢磨,ポートフォリオ,portfolio,TakumaTanaka,Tanakatakuma">
 　　<link rel="stylesheet" href="css/style.css">
   <script type="text/javascript" src="js/openclose.js"></script>
+  <script type="text/javascript"><!--
+function ChangeTab(tabname) {
+   // 全部消す
+   document.getElementById('tab1').style.display = 'none';
+   document.getElementById('tab2').style.display = 'none';
+   document.getElementById('tab3').style.display = 'none';
+   document.getElementById('tab4').style.display = 'none';
+   // 指定箇所のみ表示
+   document.getElementById(tabname).style.display = 'block';
+}
+// --></script>
+<style type="text/css"><!--
+/* 表示領域全体 */
+div.tabbox {
+   margin: 0px; padding: 0px; width: 100%;
+}
+
+/* タブ部分 */
+p.tabs { margin: 0px; padding: 0px; }
+p.tabs a {
+   display: block; width: 9em; float: left;
+   margin: 0px 1px 0px 0px; padding: 3px;
+   text-align: center;
+   border-radius: 12px 12px 0px 0px; /* 角を丸くする */
+}
+p.tabs a.tab1 { background-color: blue; color: white; }
+p.tabs a.tab2 { background-color: #aaaa00; color:white;}
+p.tabs a.tab3 { background-color: red; color: white; }
+p.tabs a.tab4 { background-color: #9932cc; color: white; }
+p.tabs a:hover { color: yellow; }
+
+/* タブ中身のボックス */
+div.tab { overflow: auto; clear: left; }
+div#tab1 {
+   border: 2px solid blue; background-color: #ccffff;
+}
+div#tab2 {
+   border: 2px solid #aaaa00; background-color: #ffffcc;
+}
+div#tab3 {
+   border: 2px solid red; background-color: #ffcccc;
+}
+div#tab4 {
+   border: 2px solid red; background-color: #ccffcc;
+}
+div.tab p { margin: 0.5em; }
+--></style>
 </head>
 
 <body>
@@ -35,13 +82,24 @@
 
 <section>
 <h2 id="product">Product</h2>
-<p id="product_title"><a href="https://sleepedtiger.github.io/aoki/index.html#gaiyo" target="_blank">↓架空の文具サイト↓</a></p>
-<div id="image"><a href="https://sleepedtiger.github.io/aoki/index.html#gaiyo" target="_blank"><img src="images/aoki.jpg"></a></div>
+<div class="tabbox">
+   <p class="tabs">
+      <a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false;">文具サイト</a>
+      <a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); return false;">ショッピングサイト</a>
+      <a href="#tab3" class="tab3" onclick="ChangeTab('tab3'); return false;">営業履歴管理</a>
+      <a href="#tab4" class="tab4" onclick="ChangeTab('tab4'); return false;">スマホアプリ</a>
+   </p>
+
+<div id="tab1" class="tab">
+<p id="product_title"><a href="https://sleepedtiger.github.io/aoki/index.html" target="_blank">↓架空の文具サイト↓</a></p>
+<div id="image"><a href="https://sleepedtiger.github.io/aoki/index.html" target="_blank"><img src="images/aoki.jpg"></a></div>
 <p id="setsumei">職業訓練校にて、指示により1日で作成。<br>
 1ページでのレイアウトとの指示もあり、バックグラウンドをグラデーションにすることにより、<br>ページ内での変化を付けた。<br>
 また、QRコードを読み込むことで地図を表示できるようにし、スマホでのMAP確認も簡単にした。<br>
 使用言語：HTML・CSS</p>
+</div>
 
+<div id="tab2" class="tab">
 <p id="product_title"><a href="https://takdepot.herokuapp.com/ja" target="_blank">↓架空のショッピングサイト↓</a></p>
 <div id="image"><a href="https://takdepot.herokuapp.com/ja" target="_blank"><img src="images/jungle.jpg"></a></div>
 <p id="setsumei">職業訓練校にて2週間で作成。<br>
@@ -49,7 +107,9 @@
 また、コメントが投稿されることで評価平均点も自動的に更新される。<br>
 使用言語：HTML・CSS・RubyOnRails
 </p>
+</div>
 
+ <div id="tab3" class="tab">
 <p id="product_title"><a href="http://afternoon-tor-2569.herokuapp.com/" target="_blank">↓営業履歴管理↓</a></p>
 <div id="image"><a href="http://afternoon-tor-2569.herokuapp.com/" target="_blank"><img src="images/sales.jpg"></a></div>
 <p id="setsumei">職業訓練校にて3名グループで作成。<br>
@@ -57,7 +117,9 @@
 また、社員IDでログインしないと編集できない仕組みにした。<br>
 使用言語：HTML・CSS・RubyOnRails
 </p>
+</div>
 
+ <div id="tab4" class="tab">
 <p id="product_title">↓簡易スマホアプリ↓</p>
 <div id="image"><img src="images/shopping.jpg"></div>
 <p id="setsumei">monocaを使用したアンドロイド用アプリ。<br>
@@ -66,6 +128,11 @@
 使用言語：HTML・CSS・Javascript・OnsenUI<br>
 <a href="shoping.apk">ダウンロードはこちら</a>
 </p>
+</div>
+<script type="text/javascript"><!--
+  // デフォルトのタブを選択
+  ChangeTab('tab1');
+// --></script>
 </section>
 </div>
 <!--/main-->
