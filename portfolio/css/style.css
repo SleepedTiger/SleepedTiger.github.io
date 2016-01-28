@@ -89,7 +89,7 @@ nav#menubar ul li.current a {
 /*コンテナー（ヘッダー以下を囲むブロック）
 ---------------------------------------------------------------------------*/
 #container {
-	background: url(../images/bg1.jpg);	/*水玉背景画像*/
+	background: url(../images/tyotohana.jpg);	/*水玉背景画像*/
 	padding-top: 40px;	/*上に空けるスペース*/
 }
 
@@ -612,9 +612,43 @@ th.skilltabele {
 	margin-bottom: 10px;
 }
 
+th.skilltabele2 {
+	border:4px;
+	border-style:inset;
+	border-color: darkorchid;
+	width: 50%;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	font-size: large;
+}
+
 #main div {
 	text-align: center;
 	font-weight: bold;
 	font-size: large;
 	margin-top: 10px;
+}
+
+#skiltitle {
+	font-family:
+   "ヒラギノ明朝 ProN W6",
+   "HiraMinProN-W6",
+   "HG明朝E",
+   "ＭＳ Ｐ明朝",
+   "MS PMincho",
+   "MS 明朝",
+   serif;
+}
+
+#skill, #profile, #product, #contact {
+	font-family:
+   "ヒラギノ明朝 ProN W6",
+   "HiraMinProN-W6",
+   "HG明朝E",
+   "ＭＳ Ｐ明朝",
+   "MS PMincho",
+   "MS 明朝";
+   font-weight: bold;
 }
